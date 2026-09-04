@@ -4,7 +4,7 @@ The WEBWorx website — plain HTML, CSS and JavaScript. No framework, no build s
 no dependencies to install. Deployed to **Cloudflare Pages** on the
 `webworx.solutions` domain.
 
-**Making a change?** See [UPDATING.md](UPDATING.md) — step-by-step instructions
+**Making a change?** See [UPDATING-AND-DEPLOYMENT.md](UPDATING-AND-DEPLOYMENT.md) — step-by-step instructions
 for editing and publishing, in the browser or on your computer.
 
 ## Files
@@ -12,7 +12,7 @@ for editing and publishing, in the browser or on your computer.
 | Path | Purpose |
 |---|---|
 | `index.html` | The whole site — single page, anchor navigation |
-| `UPDATING.md` | How to edit and publish the site |
+| `UPDATING-AND-DEPLOYMENT.md` | How to edit, publish and roll back the site |
 | `assets/css/styles.css` | All styling, organised tokens → reset → primitives → layout → components |
 | `assets/js/theme.js` | Applies the stored colour theme before first paint (kept separate so the CSP can forbid inline script) |
 | `assets/js/main.js` | Progressive enhancement only — theme toggle, accordion, filters, reveal, scroll-spy, count-up, spotlight |

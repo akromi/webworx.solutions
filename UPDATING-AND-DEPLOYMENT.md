@@ -1,4 +1,4 @@
-# How to update the website
+# Updating and deployment
 
 **The one thing to know:** anything saved to the `main` branch on GitHub goes
 live on https://webworx.solutions within about a minute. There is no build step
