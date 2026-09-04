@@ -1,0 +1,2 @@
+# Send the www host to the apex, preserving the path.
+https://www.webworx.solutions/*  https://webworx.solutions/:splat  301

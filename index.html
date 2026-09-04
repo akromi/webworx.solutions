@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEBWorx — Web Technology Design &amp; Development</title>
+
+<meta name="description" content="WEBWorx designs and builds web software for the hard requirements: offline-first architecture, WCAG 2.1 AA accessibility, and multilingual delivery including right-to-left. Ottawa, Canada. Recent work: AidPost.ca and ESMS.school.">
+<meta name="author" content="WEBWorx">
+<link rel="canonical" href="https://webworx.solutions/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WEBWorx">
+<meta property="og:title" content="WEBWorx — Web Technology Design &amp; Development">
+<meta property="og:description" content="Offline-first architecture, accessibility that survives an audit, and multilingual delivery including right-to-left. Recent work: AidPost.ca and ESMS.school.">
+<meta property="og:url" content="https://webworx.solutions/">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script src="/assets/js/theme.js"></script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ====================================================================== -->
+<!-- Masthead                                                                -->
+<!-- ====================================================================== -->
+<header class="masthead" id="masthead">
+  <div class="wrap masthead__inner">
+    <a class="brand" href="#top">
+      <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M2 7l3.6 10L9 9.5 12.4 17 16 7" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="19.5" cy="7.5" r="2.4" stroke="currentColor" stroke-width="1.9"/>
+      </svg>
+      <span>WEBWorx<span class="brand__dim">.solutions</span></span>
+    </a>
+
+    <nav class="nav" id="primary-nav" aria-label="Sections">
+      <a class="nav__link" href="#recent">Recent</a>
+      <a class="nav__link" href="#capabilities">Capabilities</a>
+      <a class="nav__link" href="#approach">Approach</a>
+      <a class="nav__link" href="#work">Work</a>
+      <a class="nav__link" href="#stack">Stack</a>
+      <a class="nav__link" href="#practice">Practice</a>
+    </nav>
+
+    <button class="icon-btn theme-toggle" id="theme-toggle" type="button"
+            aria-label="Switch colour theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M12 2.4v2.3M12 19.3v2.3M4.2 12H1.9M22.1 12h-2.3M6.5 6.5L4.9 4.9M19.1 19.1l-1.6-1.6M17.5 6.5l1.6-1.6M4.9 19.1l1.6-1.6"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20.5 14.6A8.6 8.6 0 019.4 3.5a8.6 8.6 0 1011.1 11.1z"
+              stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ====================================================================== -->
+<!-- Hero                                                                    -->
+<!-- ====================================================================== -->
+<section class="hero" id="top">
+  <div class="hero__aurora" aria-hidden="true">
+    <span class="hero__blob hero__blob--a"></span>
+    <span class="hero__blob hero__blob--b"></span>
+    <span class="hero__blob hero__blob--c"></span>
+  </div>
+  <div class="hero__grid-lines" aria-hidden="true"></div>
+
+  <div class="wrap hero__inner">
+    <div class="hero__lead">
+      <p class="label hero__eyebrow">WEBWorx &middot; Ottawa, Canada</p>
+
+      <h1 class="hero__title">Web software for the hard requirements.</h1>
+
+      <p class="hero__role">
+        We design and build systems that have to work offline, pass an accessibility
+        audit, and speak more than one language — including
+        right&#8209;to&#8209;left.
+      </p>
+
+      <p class="hero__thesis">
+        WEBWorx builds the parts most teams treat as someone else's problem: the disconnected
+        path, the screen-reader path, the Arabic path, the audit trail. Two decades of that work
+        has been delivered inside Government of Canada programmes; the
+        <span class="grad">current products carry it further</span> — a casualty-care
+        application that runs with no network at all, and a school system operating in three
+        languages.
+      </p>
+
+      <ul class="hero__meta">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+          Ottawa, Ontario
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.7l7.5 3v6c0 4.6-3.1 8.4-7.5 9.6-4.4-1.2-7.5-5-7.5-9.6v-6l7.5-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2.2 2.2L15.4 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Reliability clearance to Jan 2030
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.8"/><path d="M2.8 12h18.4M12 2.8c4.6 5 4.6 13.4 0 18.4-4.6-5-4.6-13.4 0-18.4z" stroke="currentColor" stroke-width="1.8"/></svg>
+          EN &middot; FR &middot; AR delivery
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.2" y="4.6" width="17.6" height="15.2" rx="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M3.2 9.4h17.6M8.4 2.8v3.6M15.6 2.8v3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          20+ years delivering
+        </li>
+      </ul>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#recent">
+          See recent work
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12.5 5.8L18.7 12l-6.2 6.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#capabilities">What we do</a>
+        <a class="btn btn--ghost" href="mailto:akromi@gmail.com">Start a project</a>
+      </div>
+    </div>
+
+    <!-- Build record: the practice, rendered as an instrument panel -->
+    <aside class="readout" aria-label="Practice at a glance">
+      <header class="readout__bar">
+        <span class="readout__led" aria-hidden="true"></span>
+        <span class="readout__name">build&nbsp;record</span>
+        <span class="readout__state">shipping</span>
+      </header>
+
+      <div class="readout__body">
+        <p class="readout__cmd"><span aria-hidden="true">$</span> webworx --status</p>
+
+        <dl class="readout__rows">
+          <div><dt>products in production</dt><dd>4</dd></div>
+          <div><dt>interface languages</dt><dd>7</dd></div>
+          <div><dt>right-to-left</dt><dd>3</dd></div>
+          <div><dt>accessibility target</dt><dd>WCAG&nbsp;2.1&nbsp;AA</dd></div>
+          <div><dt>automated tests</dt><dd>335</dd></div>
+          <div><dt>CI workflows, one product</dt><dd>9</dd></div>
+          <div><dt>offline-capable builds</dt><dd class="is-accent">yes</dd></div>
+        </dl>
+
+        <p class="readout__foot">
+          Ottawa, Canada. Public sector, healthcare and education.
+          <span class="readout__caret" aria-hidden="true"></span>
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Bento stats -->
+  <div class="wrap">
+    <ul class="bento" aria-label="The practice at a glance">
+      <li class="bento__tile bento__tile--wide">
+        <span class="bento__num" data-count="20" data-suffix="+">20+</span>
+        <span class="bento__label">Years designing and building web systems, mostly Government of&nbsp;Canada</span>
+      </li>
+      <li class="bento__tile">
+        <span class="bento__num" data-count="7">7</span>
+        <span class="bento__label">Interface languages shipped</span>
+      </li>
+      <li class="bento__tile">
+        <span class="bento__num" data-count="335">335</span>
+        <span class="bento__label">Automated test files</span>
+      </li>
+      <li class="bento__tile">
+        <span class="bento__num" data-count="4">4</span>
+        <span class="bento__label">Products live in production</span>
+      </li>
+      <li class="bento__tile bento__tile--accent">
+        <span class="bento__num">AA</span>
+        <span class="bento__label">WCAG 2.1 the standard, not the stretch goal</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Technology ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <div class="ticker__set">
+      <span>TypeScript</span><span>React&nbsp;18</span><span>Django&nbsp;5.2</span><span>Vite</span>
+      <span>Fastify</span><span>PostgreSQL</span><span>IndexedDB</span><span>Workbox</span>
+      <span>HL7&nbsp;FHIR&nbsp;R4</span><span>WCAG&nbsp;2.1&nbsp;AA</span><span>WET-BOEW</span>
+      <span>Power&nbsp;Pages</span><span>Dataverse</span><span>Playwright</span><span>Vitest</span>
+      <span>WebCrypto</span><span>Docker</span><span>GitHub&nbsp;Actions</span><span>Cloudflare</span>
+      <span>OpenAPI</span><span>PCF</span><span>Python&nbsp;3.12</span>
+    </div>
+    <div class="ticker__set">
+      <span>TypeScript</span><span>React&nbsp;18</span><span>Django&nbsp;5.2</span><span>Vite</span>
+      <span>Fastify</span><span>PostgreSQL</span><span>IndexedDB</span><span>Workbox</span>
+      <span>HL7&nbsp;FHIR&nbsp;R4</span><span>WCAG&nbsp;2.1&nbsp;AA</span><span>WET-BOEW</span>
+      <span>Power&nbsp;Pages</span><span>Dataverse</span><span>Playwright</span><span>Vitest</span>
+      <span>WebCrypto</span><span>Docker</span><span>GitHub&nbsp;Actions</span><span>Cloudflare</span>
+      <span>OpenAPI</span><span>PCF</span><span>Python&nbsp;3.12</span>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================================== -->
+<!-- 01 · Recent work — the two flagships                                    -->
+<!-- ====================================================================== -->
+<section class="section" id="recent" aria-labelledby="recent-title">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="section__num">01 — Recent work</p>
+      <h2 class="section__title" id="recent-title">Two products, built end to end</h2>
+      <p class="lede section__intro">
+        Both are ours from data model to deployment — architecture, interface, accessibility,
+        translation, test suite, CI and hosting. They are the clearest statement of what
+        WEBWorx does.
+      </p>
+    </header>
+
+    <div class="showcase">
+
+      <!-- AidPost -->
+      <article class="showcase__card reveal">
+        <div class="showcase__head">
+          <div>
+            <p class="showcase__kind">Healthcare &middot; Emergency response</p>
+            <h3 class="showcase__title">AidPost</h3>
+          </div>
+          <span class="showcase__badge">Live</span>
+        </div>
+
+        <a class="showcase__domain" href="https://aidpost.ca">
+          aidpost.ca
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <p class="showcase__desc">
+          An <strong>offline-first progressive web application</strong> for casualty care and
+          transport documentation. Field responders capture patient identity, injuries marked on
+          an anatomical body chart, vitals and treatments, then sign off and hand over to a
+          hospital as an <strong>HL7 FHIR R4</strong> bundle — with no connectivity required at
+          any point.
+        </p>
+
+        <ul class="feature-list">
+          <li><strong>Works at zero signal.</strong> Records live on the device in IndexedDB; the service worker keeps the whole application available offline after first load.</li>
+          <li><strong>Encrypted at rest.</strong> AES-256-GCM through WebCrypto, with the key derived from a passphrase and held only in memory — an exported backup is unreadable without it.</li>
+          <li><strong>Seven languages, three right-to-left.</strong> English, French, Arabic, Spanish, Farsi, Swahili and Urdu, with translation that works offline.</li>
+          <li><strong>Optional convergence.</strong> Devices sharing a self-hosted server merge through a conflict-aware operation log — never last-write-wins, and switched off by default.</li>
+          <li><strong>Deploys two ways.</strong> One container image serves either an organisation server with PostgreSQL and automatic TLS, or a field kit on Raspberry Pi class hardware with no internet at all.</li>
+        </ul>
+
+        <dl class="card__metrics">
+          <div><dt>Test files</dt><dd>223</dd></div>
+          <div><dt>Browser E2E</dt><dd>~40</dd></div>
+          <div><dt>CI workflows</dt><dd>9</dd></div>
+          <div><dt>Languages</dt><dd>7</dd></div>
+        </dl>
+
+        <ul class="stack">
+          <li>React 18</li><li>TypeScript</li><li>Vite</li><li>Dexie / IndexedDB</li>
+          <li>Workbox</li><li>Fastify 5</li><li>PostgreSQL</li><li>HL7 FHIR R4</li>
+          <li>WebCrypto</li><li>Playwright</li><li>axe-core</li><li>Docker</li>
+        </ul>
+
+        <p class="showcase__note">
+          Prototype status: not a medical device and not for clinical use.
+        </p>
+      </article>
+
+      <!-- ESMS -->
+      <article class="showcase__card reveal">
+        <div class="showcase__head">
+          <div>
+            <p class="showcase__kind">Education &middot; School administration</p>
+            <h3 class="showcase__title">ESMS</h3>
+          </div>
+          <span class="showcase__badge">Live</span>
+        </div>
+
+        <a class="showcase__domain" href="https://esms.school">
+          esms.school
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <p class="showcase__desc">
+          A complete <strong>school information system</strong> for an Ontario JK–8 school of
+          roughly 600 students: enrolment, attendance, gradebook, assessment, timetabling,
+          discipline, health office, fees and statutory filings — plus a separate parent portal
+          on the public internet. Interface in <strong>English, French and Arabic</strong> with
+          full right-to-left support.
+        </p>
+
+        <ul class="feature-list">
+          <li><strong>Roles decide what exists.</strong> A bursar is never offered a class register; a teacher sees one class. Access is shaped by role, not hidden by the interface.</li>
+          <li><strong>Money needs two people.</strong> A fee entered by one person is approved by another — separation of duties enforced in the data model, not in a policy document.</li>
+          <li><strong>The parent portal is a separate build.</strong> The internet-facing surface ships its own bundle carrying no court order, no medical note, and no other family's child.</li>
+          <li><strong>Ten jobs run unattended, and something watches them.</strong> Backups with a restore check, audit-chain verification, retention purges, statutory filings and instalment runs — with a health board that reports what did <em>not</em> send.</li>
+          <li><strong>Arabic that survives printing.</strong> Report cards are generated as PDFs with Arabic properly shaped and bidirectional text resolved, not flattened to an image.</li>
+        </ul>
+
+        <dl class="card__metrics">
+          <div><dt>Modules</dt><dd>20</dd></div>
+          <div><dt>Test modules</dt><dd>112</dd></div>
+          <div><dt>Scheduled jobs</dt><dd>10</dd></div>
+          <div><dt>Languages</dt><dd>3</dd></div>
+        </dl>
+
+        <ul class="stack">
+          <li>Django 5.2</li><li>DRF</li><li>PostgreSQL</li><li>React 18</li>
+          <li>TypeScript</li><li>Vite</li><li>WeasyPrint</li><li>RFC 6238 TOTP</li>
+          <li>mypy</li><li>ruff</li><li>Gunicorn</li>
+        </ul>
+
+        <p class="showcase__note">
+          Ontario is the reference edition; other jurisdictions are added as edition profiles.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- 02 · Capabilities                                                       -->
+<!-- ====================================================================== -->
+<section class="section section--sunk" id="capabilities" aria-labelledby="cap-title">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="section__num">02 — Capabilities</p>
+      <h2 class="section__title" id="cap-title">What WEBWorx designs and builds</h2>
+      <p class="lede section__intro">
+        Depth is stated honestly. <em>Specialist</em> means work most practitioners do not take
+        on; <em>applied</em> means shipped and working, without claiming mastery.
+      </p>
+    </header>
+
+    <div class="caps" id="caps">
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-1">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 8.5A2.5 2.5 0 015.5 6h13A2.5 2.5 0 0121 8.5v7a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 15.5v-7z" stroke="currentColor" stroke-width="1.8"/><path d="M7.5 14.5l2.2-2.5-2.2-2.5M12.5 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="cap__name">Offline-first &amp; PWA architecture</span><span class="cap__sub">Service workers, IndexedDB, conflict-aware sync, installability</span></span>
+          <span class="cap__depth">Specialist</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-1" hidden>
+          <p>Our strongest area. Offline is not a cache bolted on late — it is the baseline the application is designed against, with connectivity treated as the optional extra.</p>
+          <ul class="cap__proof">
+            <li><strong>Durable local storage</strong> — IndexedDB through Dexie, with tests running against <code>fake-indexeddb</code> so the offline path is covered in CI rather than assumed.</li>
+            <li><strong>Application shell</strong> — Workbox via <code>vite-plugin-pwa</code>, installable to a home screen; elsewhere a hand-rolled service worker and web manifest with no tooling at all.</li>
+            <li><strong>Multi-device convergence</strong> — a conflict-aware operation-log merge, explicitly not last-write-wins, default-off and gated behind a PIN-protected admin panel.</li>
+            <li><strong>Deployment realism</strong> — one image, two profiles: a VPS with PostgreSQL and automatic TLS, or a field kit on Raspberry Pi class hardware with SQLite and LAN TLS.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-5">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.6v5.2M12 16.2h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          <span><span class="cap__name">Accessibility engineering</span><span class="cap__sub">WCAG 2.1 AA, WET-BOEW / GCWeb, screen-reader-level detail</span></span>
+          <span class="cap__depth">Specialist</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-5" hidden>
+          <p>Eight years of accessibility work across Government of Canada programmes — and, less commonly, decisions that show how individual assistive technologies actually behave rather than knowledge of the success criteria alone.</p>
+          <ul class="cap__proof">
+            <li><strong>Assistive-technology-specific judgement</strong> — native <code>&lt;details&gt;</code> disclosure chosen over a scripted tree because it is keyboard and screen-reader correct with zero libraries, and an ARIA role deliberately <em>not</em> added because it would change NVDA's mode.</li>
+            <li><strong>Four AT stacks verified</strong> — NVDA and JAWS on Windows, VoiceOver on macOS and iOS, TalkBack on Android.</li>
+            <li><strong>Automated where automation is honest</strong> — <code>axe-core</code> assertions inside the browser end-to-end suite, with manual verification for everything it cannot see.</li>
+            <li><strong>Programme-level remediation</strong> — led accessibility and usability remediation for a public portal serving thousands of users, aligned to Canada.ca and WCAG.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-6">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 6.5h15M9 3.6l-.6 2.9M6.4 10.2c1.8 4.1 4.6 6.9 8 8.4M11.8 10.2c-1.1 3.4-3.4 6.2-6.3 7.8M13.2 21l4.2-9.4 4.1 9.4M14.9 17.8h5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="cap__name">Internationalization &amp; RTL</span><span class="cap__sub">Seven languages, bidirectional layout, shaped Arabic in print</span></span>
+          <span class="cap__depth">Specialist</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-6" hidden>
+          <p>English, French, Arabic, Spanish, Farsi, Swahili and Urdu — three right-to-left. Bilingual English and French delivery under the Official Languages Act is routine; the multilingual RTL work goes well past it.</p>
+          <ul class="cap__proof">
+            <li><strong>Right-to-left throughout, not merely mirrored</strong> — full RTL interfaces, and generated PDFs where Arabic is shaped and bidirectional text is resolved by the text engine.</li>
+            <li><strong>Translation that survives disconnection</strong> — an in-house context-based i18n layer chosen over a library specifically so it works offline, with English fallback.</li>
+            <li><strong>Localised media</strong> — narrated walkthroughs produced in three languages with captions delivered as separate <code>.vtt</code> tracks, so Arabic shaping can be switched off if it renders wrongly.</li>
+            <li><strong>Multilingual static delivery</strong> — a six-language site with <code>hreflang</code> alternates in the sitemap and per-language canonical pages.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-2">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 3.5L6 12l3.5 8.5M14.5 3.5L18 12l-3.5 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="cap__name">TypeScript &amp; React at scale</span><span class="cap__sub">Monorepos, workspace boundaries, restrained state management</span></span>
+          <span class="cap__depth">Deep</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-2" hidden>
+          <p>Around 500 TypeScript and TSX files across the product line, organised so the boundaries mean something. React 18 with Vite in three separate products — and no state-management library, no UI kit and no router package, because context and composition are sufficient here.</p>
+          <ul class="cap__proof">
+            <li><strong>Deliberate layering</strong> — domain model and standards mapping live in a framework-free package, reusable unchanged by a future native client or the server.</li>
+            <li><strong>Ports and adapters</strong> — a provincial health-record gateway written as an implementation of a port interface, not as calls scattered through the interface layer.</li>
+            <li><strong>Bundle separation as a security boundary</strong> — a public portal built as a distinct bundle so the internet-facing surface ships less code and less data.</li>
+            <li><strong>Type checking as a gate</strong> — <code>tsc --noEmit</code> across the root and every workspace before a build is allowed to proceed.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-4">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="6" rx="7.5" ry="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 6v12c0 1.8 3.4 3.2 7.5 3.2s7.5-1.4 7.5-3.2V6M4.5 12c0 1.8 3.4 3.2 7.5 3.2s7.5-1.4 7.5-3.2" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          <span><span class="cap__name">Back ends &amp; data modelling</span><span class="cap__sub">Django, REST, scheduled work, auditability, SQL depth</span></span>
+          <span class="cap__depth">Deep</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-4" hidden>
+          <p>Django 5.2 and Django REST Framework carrying a genuinely complex domain, with fifteen years of database design behind it — logical and physical models, ERDs, Oracle and SQL Server, migration and reconciliation.</p>
+          <ul class="cap__proof">
+            <li><strong>Domain decomposition</strong> — twenty applications, 185 migrations, PostgreSQL in production and SQLite for local development, each concern owning its own tables and rules.</li>
+            <li><strong>Rules in the model, not the screen</strong> — separation of duties, role-scoped visibility and retention schedules enforced where they cannot be bypassed.</li>
+            <li><strong>Unattended work that reports itself</strong> — scheduled jobs with a health board that surfaces what failed to run, and a restore check that proves the backup.</li>
+            <li><strong>Legacy migration</strong> — SSIS packages moving legacy datasets into Dataverse with source-to-target mapping, transformation, validation and reconciliation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-8">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.4 12L12 3.4 20.6 12 12 20.6 3.4 12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 12h6.8M12 8.6v6.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span><span class="cap__name">Microsoft Power Platform</span><span class="cap__sub">Power Pages, Dataverse, Power Automate, Dynamics 365 CE</span></span>
+          <span class="cap__depth">Deep &middot; 8+ years</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-8" hidden>
+          <p>The commercial core of the practice, and where the web skills above get applied under real constraint — a platform that renders your HTML for you, restricts what JavaScript may do, and still has to meet federal accessibility and official-languages obligations.</p>
+          <ul class="cap__proof">
+            <li><strong>Public-facing portals</strong> — multi-step bilingual intake with conditional logic, file upload, CAPTCHA and full screen-reader support, on Liquid web templates over Dataverse.</li>
+            <li><strong>A productised scaffold</strong> — a console script that extracts a form's schema straight from the maker environment, plus a generic controller and template, taking a Power Apps form to a compliant portal against a written checklist.</li>
+            <li><strong>Integration beyond the defaults</strong> — Dataverse Web API and OData, FetchXML, custom APIs, Power Automate flows, and OpenAPI contracts authored for downstream consumers.</li>
+            <li><strong>Custom interface controls</strong> — Power Apps Component Framework grid and field controls in TypeScript and React where the platform has no answer.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-7">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4.4" y="10.4" width="15.2" height="10.2" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M7.8 10.4V7.6a4.2 4.2 0 018.4 0v2.8M12 14.4v2.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span><span class="cap__name">Applied security &amp; privacy</span><span class="cap__sub">At-rest encryption, MFA, audit chains, least privilege</span></span>
+          <span class="cap__depth">Applied, with judgement</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-7" hidden>
+          <p>Not a security practice by title, but the security code shows the habits of people who have thought about failure modes: standards-conformant primitives, documented parameter choices, and a written argument for anything that could be got subtly wrong.</p>
+          <ul class="cap__proof">
+            <li><strong>At-rest encryption</strong> — WebCrypto AES-256-GCM with PBKDF2-SHA-256 at the OWASP-recommended iteration floor; the derived key is non-extractable and memory-only.</li>
+            <li><strong>Second factor written to the RFC</strong> — TOTP proved against the specifications' own published test vectors, with constant-time comparison, refusal of a replayed counter and a deliberately narrow drift window.</li>
+            <li><strong>Tamper-evident audit</strong> — a hash-chained audit log with a verification command and a retention and destruction schedule.</li>
+            <li><strong>Supply chain</strong> — CodeQL, secret scanning and a generated CycloneDX SBOM in CI, and a dependency count kept deliberately small.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-9">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3.4h11l3 4.2-8.5 13.2L3.5 7.6l3-4.2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3.5 7.6h17M9.5 3.4L12 7.6l2.5-4.2" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+          <span><span class="cap__name">Zero-dependency browser engineering</span><span class="cap__sub">Single-file applications, print fidelity, resilient data import</span></span>
+          <span class="cap__depth">Distinctive</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-9" hidden>
+          <p>Complete business applications in a single HTML file, running from the file system, with no build, no server and no dependencies. A real engineering constraint, chosen because the users are counter staff who should not have to install or maintain anything.</p>
+          <ul class="cap__proof">
+            <li><strong>Defensive parsing</strong> — point-of-sale exports consumed as-is, with title blocks, repeated page headers, subtotal rows and pagination lines detected and discarded.</li>
+            <li><strong>Print as a first-class output</strong> — A4 layouts reproducing the source system's own report, headers repeating per page, and the document title set so "Save as PDF" suggests a sensible file name.</li>
+            <li><strong>Domain encoding</strong> — shop search tags decoded into product sizes, malformed tags audited, and corrections suggested back to the counter.</li>
+            <li><strong>Local persistence and safe merge</strong> — retention across sessions, and multi-year imports merged by reference so re-importing overlapping exports cannot duplicate.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap">
+        <button class="cap__btn" type="button" aria-expanded="false" aria-controls="cap-10">
+          <span class="cap__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.6 16.5a4.1 4.1 0 011.3-8 5.6 5.6 0 0110.7-1.4 4.4 4.4 0 01.6 8.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12.4v8.2M9 15.4l3-3 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><span class="cap__name">Build tooling, CI/CD &amp; testing</span><span class="cap__sub">Nine workflows on one product; one command that runs everything</span></span>
+          <span class="cap__depth">Strong</span>
+          <svg class="cap__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cap__panel" id="cap-10" hidden>
+          <p>Testing is not decorative. The largest product carries 223 test files plus around forty browser end-to-end specifications, and exposes one command that runs the identical sequence CI runs — type check, every workspace's tests, the build, then the browser suite.</p>
+          <ul class="cap__proof">
+            <li><strong>Layered suites</strong> — Vitest for unit and integration, Testing Library for components, Playwright for browser flows, in-memory PostgreSQL for service tests.</li>
+            <li><strong>Nine GitHub Actions workflows on a single product</strong> — CI, end-to-end, CodeQL, secret scan, image publish, Pages deploy and automated code review.</li>
+            <li><strong>Environment-aware deployment</strong> — staging and production shipping different server configuration, one cache-disabled and no-index, the other cached with security headers.</li>
+            <li><strong>Builds with no install step</strong> — a hand-written static site generator using Node built-ins only, paired with smoke tests that run against the deployed URL.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- 03 · Approach                                                           -->
+<!-- ====================================================================== -->
+<section class="section" id="approach" aria-labelledby="approach-title">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="section__num">03 — Approach</p>
+      <h2 class="section__title" id="approach-title">Six convictions, visible in the code</h2>
+      <p class="lede section__intro">
+        These recur across unrelated domains — emergency medicine, school administration,
+        federal service delivery, retail operations, household finance. Recurrence across
+        domains is what separates a conviction from a coincidence.
+      </p>
+    </header>
+
+    <div class="findings">
+
+      <article class="finding reveal">
+        <span class="finding__idx">01</span>
+        <h3 class="finding__title">Offline is the architecture, not a feature</h3>
+        <p class="finding__body">
+          Every product assumes the network is missing and designs from there. Connectivity is
+          the optional enhancement, and <strong>the disconnected path is the one that gets the
+          tests.</strong>
+        </p>
+        <div class="evidence">
+          <p class="evidence__label">In practice</p>
+          <ul>
+            <li>A casualty-care application fully usable at zero connectivity, with sync default-off and admin-gated</li>
+            <li>A field-kit profile targeting Raspberry Pi class hardware with no internet at all</li>
+            <li>Business tools that run by double-clicking an HTML file over <code>file://</code></li>
+            <li>A finance application with no server, no analytics and no network calls of any kind</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="finding reveal">
+        <span class="finding__idx">02</span>
+        <h3 class="finding__title">Accessibility and language are substrate</h3>
+        <p class="finding__body">
+          Not a remediation pass at the end. Seven interface languages, three right-to-left, and
+          the hard parts handled rather than avoided.
+          <strong>Decisions are made per screen reader, not per specification.</strong>
+        </p>
+        <div class="evidence">
+          <p class="evidence__label">In practice</p>
+          <ul>
+            <li>Arabic shaped and bidi-resolved inside generated PDFs, not flattened to an image</li>
+            <li>A documented refusal to put <code>role="button"</code> on <code>&lt;summary&gt;</code> — it forces NVDA into focus mode</li>
+            <li>Verification across NVDA, JAWS, VoiceOver and TalkBack</li>
+            <li><code>axe-core</code> assertions running inside the browser suite, not as a manual audit</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="finding reveal">
+        <span class="finding__idx">03</span>
+        <h3 class="finding__title">A dependency is a security decision</h3>
+        <p class="finding__body">
+          Time-based one-time passwords written out rather than installed — because both RFCs
+          publish official test vectors, so the implementation can be <em>proved</em> against the
+          standard instead of trusted because it is popular.
+          <strong>The argument is committed beside the code.</strong>
+        </p>
+        <div class="evidence">
+          <p class="evidence__label">In practice</p>
+          <ul>
+            <li>A four-line <code>requirements.txt</code>, each line carrying a written justification</li>
+            <li>A static site generator using only Node built-ins, so the build needs no <code>npm install</code></li>
+            <li>Single-file browser applications with zero dependencies, several thousand lines each</li>
+            <li>CodeQL, secret scanning and a CycloneDX SBOM wired in alongside the tests</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="finding reveal">
+        <span class="finding__idx">04</span>
+        <h3 class="finding__title">Least privilege is designed in, then measured</h3>
+        <p class="finding__body">
+          A government portal was re-architected from client-side reads and a direct record POST
+          to server-rendered queries and a back-end flow. Required database table permissions
+          went from three tables with Create and Read to <strong>zero</strong> — recorded as a
+          before-and-after table rather than left implicit.
+        </p>
+        <div class="evidence">
+          <p class="evidence__label">In practice</p>
+          <ul>
+            <li>Client lookups replaced by server-side queries; record creation moved behind an automation flow</li>
+            <li>CAPTCHA verification moved server-side, removing another permission entirely</li>
+            <li>Custom validation retired in favour of the framework's native validator</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="finding reveal">
+        <span class="finding__idx">05</span>
+        <h3 class="finding__title">Rules belong in the model</h3>
+        <p class="finding__body">
+          Anything that matters is enforced where it cannot be bypassed — not hidden by an
+          interface that a different route can reach around.
+          <strong>Roles determine what is offered, not merely what is permitted.</strong>
+        </p>
+        <div class="evidence">
+          <p class="evidence__label">In practice</p>
+          <ul>
+            <li>Separation of duties on money: entered by one person, approved by another</li>
+            <li>Access rights that differ between two children in the same family because a court order says so</li>
+            <li>A public portal built as a separate bundle so restricted data is never shipped to it</li>
+            <li>Hash-chained audit with a verification command and a retention schedule</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="finding reveal">
+        <span class="finding__idx">06</span>
+        <h3 class="finding__title">The documentation argues, and admits things</h3>
+        <p class="finding__body">
+          Architecture documents ship as Markdown and PDF together with file inventories,
+          sequence diagrams, decision tables and a named section for known constraints and their
+          workarounds. <strong>Comments record where a default was wrong</strong> — one
+          type-checker note states that the defaults were inspecting about 3% of the tree, and
+          that enabling the stricter flag took it from 0 to 141 real errors.
+        </p>
+        <div class="evidence">
+          <p class="evidence__label">In practice</p>
+          <ul>
+            <li>Roadmaps stating, per feature, the specific check that closes it</li>
+            <li>A generated test catalogue committed from the suite's own output</li>
+            <li>Lint exclusions scoped to one file and one rule, with the reason written out</li>
+            <li>RFP-grade functional specifications, test artifacts and operational deliverables</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- 04 · More work                                                          -->
+<!-- ====================================================================== -->
+<section class="section section--sunk" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="section__num">04 — More work</p>
+      <h2 class="section__title" id="work-title">Across sectors, from portals to shop floors</h2>
+      <p class="lede section__intro">
+        Federal service delivery, commercial sites, operations tooling and product discovery.
+        Filter by technology to see where each capability shows up.
+      </p>
+    </header>
+
+    <div class="filters" id="filters" role="group" aria-label="Filter projects by technology">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" type="button" data-filter="powerplatform" aria-pressed="false">Power Platform</button>
+      <button class="filter" type="button" data-filter="a11y" aria-pressed="false">Accessibility</button>
+      <button class="filter" type="button" data-filter="i18n" aria-pressed="false">i18n / RTL</button>
+      <button class="filter" type="button" data-filter="offline" aria-pressed="false">Offline / PWA</button>
+      <button class="filter" type="button" data-filter="vanilla" aria-pressed="false">Vanilla JS</button>
+      <button class="filter" type="button" data-filter="tooling" aria-pressed="false">Build tooling</button>
+      <button class="filter" type="button" data-filter="research" aria-pressed="false">Research</button>
+    </div>
+
+    <div class="work" id="work-grid">
+
+      <article class="card reveal" data-tags="powerplatform a11y i18n vanilla">
+        <div class="card__top">
+          <p class="card__kind">Government of Canada &middot; Health Canada</p>
+          <span class="card__vis">Public repos</span>
+        </div>
+        <h3 class="card__title">SafePort — public service portals</h3>
+        <p class="card__desc">
+          Bilingual public-facing portals for the Travelling Public Programme: a General
+          Inspection report and a Ship Sanitation Inspection request, both multi-step forms with
+          conditional logic, file upload, CAPTCHA and comprehensive screen-reader support — on
+          <strong>Power Pages and Dataverse</strong> under WET4 / GCWeb and WCAG 2.1 AA.
+        </p>
+        <p class="card__note">
+          Roughly 21,000 lines of hand-written client library sit behind these: validation, an
+          accessible date picker, a bilingual time selector, a universal announcer, a native
+          file bridge and session-timeout handling.
+        </p>
+        <div class="card__aside">
+          <dl class="card__metrics">
+            <div><dt>Client library</dt><dd>~21k lines</dd></div>
+            <div><dt>AT stacks</dt><dd>4</dd></div>
+            <div><dt>Languages</dt><dd>EN / FR</dd></div>
+          </dl>
+          <ul class="stack">
+            <li>Power Pages</li><li>Dataverse</li><li>Liquid</li><li>JavaScript</li>
+            <li>WET-BOEW / GCWeb</li><li>WCAG 2.1 AA</li><li>OData</li><li>FetchXML</li>
+            <li>Power Automate</li>
+          </ul>
+          <a class="card__link" href="https://github.com/akromi/Portal_Lastest">
+            View the client library
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="powerplatform a11y vanilla i18n">
+        <div class="card__top">
+          <p class="card__kind">Government of Canada &middot; Public data</p>
+          <span class="card__vis">Public</span>
+        </div>
+        <h3 class="card__title">Cruise ship inspection scores</h3>
+        <p class="card__desc">
+          A public, read-only browse interface over five years of Health Canada cruise ship
+          inspection results — a two-tier tree of cruise lines, vessels and inspection history
+          with search, filtering and lazy loading.
+        </p>
+        <p class="card__note">
+          The accessibility architecture is why this is here: native <code>&lt;details&gt;</code>
+          disclosure chosen over a scripted tree for zero-library correctness, and an ARIA role
+          deliberately omitted because it would flip NVDA into the wrong mode.
+        </p>
+        <div class="card__aside">
+          <ul class="stack">
+            <li>Power Pages</li><li>Liquid</li><li>JavaScript</li><li>OData</li>
+            <li>Native disclosure</li><li>Lazy loading</li><li>WCAG 2.1 AA</li>
+          </ul>
+          <a class="card__link" href="https://github.com/akromi/Ship-Scores-Portal">
+            Architecture &amp; source
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="powerplatform vanilla a11y i18n tooling">
+        <div class="card__top">
+          <p class="card__kind">Tooling &middot; Reusable scaffold</p>
+          <span class="card__vis">Public</span>
+        </div>
+        <h3 class="card__title">Power Pages single-page form scaffold</h3>
+        <p class="card__desc">
+          The SafePort work generalised into a reusable kit: a console script that extracts a
+          form's schema directly from the maker environment, a generic form controller, a Liquid
+          template and a written checklist that takes a Power Apps form to a WET4-compliant
+          portal.
+        </p>
+        <p class="card__note">
+          Turning one delivery into a repeatable asset — bilingual message overrides,
+          cross-field rules, conditional visibility and pattern validation expressed as
+          configuration rather than code.
+        </p>
+        <div class="card__aside">
+          <ul class="stack">
+            <li>Power Pages</li><li>Dataverse Web API</li><li>Liquid</li><li>JavaScript</li>
+            <li>Power Automate</li><li>WET4</li>
+          </ul>
+          <a class="card__link" href="https://github.com/akromi/Power-Pages-Single-Page-Portal-V3-Generic">
+            View the scaffold
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="vanilla i18n tooling">
+        <div class="card__top">
+          <p class="card__kind">Commercial site &middot; Build tooling</p>
+          <span class="card__vis">Public &middot; Live</span>
+        </div>
+        <h3 class="card__title">tireplus.ca — static rebuild</h3>
+        <p class="card__desc">
+          A bilingual Bootstrap 5 rebuild of a live commercial site, compiled from partials by a
+          <strong>hand-written static site generator that uses only Node built-ins</strong> —
+          the build requires no <code>npm install</code> at all.
+        </p>
+        <p class="card__note">
+          The pipeline is the interesting part: push to main auto-deploys to staging, production
+          is a manual dispatch, and the workflow swaps in environment-specific server
+          configuration — cache-disabled and no-index for staging, cached with security headers
+          for production.
+        </p>
+        <div class="card__aside">
+          <dl class="card__metrics">
+            <div><dt>Pages</dt><dd>85</dd></div>
+            <div><dt>Runtime deps</dt><dd>0</dd></div>
+            <div><dt>Languages</dt><dd>EN / FR</dd></div>
+          </dl>
+          <ul class="stack">
+            <li>Node.js</li><li>Bootstrap 5</li><li>GitHub Actions</li><li>FTP deploy</li>
+            <li>Apache config</li><li>Smoke tests</li>
+          </ul>
+          <a class="card__link" href="https://github.com/akromi/TIREPlus-bootstrap">
+            View the generator
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="vanilla offline">
+        <div class="card__top">
+          <p class="card__kind">Operations tooling &middot; Four applications</p>
+          <span class="card__vis">Public</span>
+        </div>
+        <h3 class="card__title">Shop operations suite — single-file apps</h3>
+        <p class="card__desc">
+          Four complete business tools, each running by double-clicking an HTML file:
+          <strong>sales reporting</strong> with print-perfect A4 output, <strong>inventory
+          dissection</strong> that decodes and audits search tags, <strong>invoice history</strong>
+          with PDF-fidelity rendering and stock reconciliation, and a <strong>loyalty
+          programme</strong> with a campaigns engine.
+        </p>
+        <p class="card__note">
+          No server, no install, no dependencies, no monthly fee — and the data never leaves the
+          browser it is loaded in. Constraint-driven engineering for users who should not have to
+          maintain anything.
+        </p>
+        <div class="card__aside">
+          <dl class="card__metrics">
+            <div><dt>Applications</dt><dd>4</dd></div>
+            <div><dt>Dependencies</dt><dd>0</dd></div>
+            <div><dt>Runs from</dt><dd>file://</dd></div>
+          </dl>
+          <ul class="stack">
+            <li>Vanilla JS</li><li>CSV parsing</li><li>localStorage</li><li>Print CSS</li>
+            <li>Service Worker</li><li>Web manifest</li>
+          </ul>
+          <a class="card__link" href="https://github.com/akromi?tab=repositories&amp;q=TIREPlus-Orleans">
+            Browse the four repositories
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="vanilla offline">
+        <div class="card__top">
+          <p class="card__kind">Companion app &middot; Published book</p>
+          <span class="card__vis">Public &middot; Live</span>
+        </div>
+        <h3 class="card__title">Money Is a Tool — companion calculators</h3>
+        <p class="card__desc">
+          Four spreadsheet calculators from a published household finance guide, rebuilt as one
+          installable progressive web app with stable hash routes so each chapter's QR code opens
+          its own tool directly.
+        </p>
+        <p class="card__note">
+          Private by construction — no server, no analytics, no network calls of any kind. Every
+          entry stays in the browser's own storage, with per-tool resets and a global clear.
+        </p>
+        <div class="card__aside">
+          <ul class="stack">
+            <li>Vanilla JS</li><li>PWA</li><li>Service Worker</li><li>localStorage</li>
+            <li>Hash routing</li><li>SVG charts</li><li>Light / dark</li>
+          </ul>
+          <a class="card__link" href="https://moneyisatool.ca/">
+            moneyisatool.ca
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="vanilla i18n">
+        <div class="card__top">
+          <p class="card__kind">Product site &middot; Six languages</p>
+          <span class="card__vis">Live</span>
+        </div>
+        <h3 class="card__title">aidpost.ca — multilingual static site</h3>
+        <p class="card__desc">
+          The AidPost product site in six languages — English, French, Arabic, Spanish, Swahili
+          and Urdu — as plain HTML and CSS with no build step, no framework and no dependencies,
+          on Cloudflare Pages.
+        </p>
+        <p class="card__note">
+          Each language is a fully translated page rather than a string swap, with
+          <code>hreflang</code> alternates in the sitemap and right-to-left handled properly.
+        </p>
+        <div class="card__aside">
+          <ul class="stack">
+            <li>HTML5</li><li>CSS3</li><li>Cloudflare Pages</li><li>Wrangler</li>
+            <li>hreflang</li><li>RTL</li><li>SVG</li>
+          </ul>
+          <a class="card__link" href="https://aidpost.ca">
+            aidpost.ca
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-tags="research">
+        <div class="card__top">
+          <p class="card__kind">Product discovery &middot; Phase 0</p>
+          <span class="card__vis">Public</span>
+        </div>
+        <h3 class="card__title">Ontario patient transportation — market study</h3>
+        <p class="card__desc">
+          A discovery engagement rather than a codebase: a system map of Ontario's non-emergency
+          patient transfer market, a bottom-up opportunity model with every assumption written
+          down and auditable, a source register with per-source confidence ratings, and an
+          operating business case.
+        </p>
+        <p class="card__note">
+          The analyst half of the job. It also contains a read-only assessment that
+          <em>overturns</em> the study's own earlier assumption — the record of a conclusion
+          being corrected by evidence.
+        </p>
+        <div class="card__aside">
+          <ul class="stack">
+            <li>Market analysis</li><li>Unit economics</li><li>Source register</li>
+            <li>Technical writing</li>
+          </ul>
+          <a class="card__link" href="https://github.com/akromi/Patient-Transportation-System">
+            Read the study
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="empty-note" id="empty-note" hidden>No projects match that filter.</p>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- 05 · Stack                                                              -->
+<!-- ====================================================================== -->
+<section class="section" id="stack" aria-labelledby="stack-title">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="section__num">05 — Technology</p>
+      <h2 class="section__title" id="stack-title">Everything we actually use</h2>
+      <p class="lede section__intro">
+        Only technologies in production use or evidenced in the delivery record.
+        Nothing aspirational.
+      </p>
+    </header>
+
+    <div class="tech-grid">
+      <div class="tech-group">
+        <h3>Languages</h3>
+        <ul>
+          <li>TypeScript</li><li>JavaScript (ES2020+)</li><li>Python 3.12</li><li>C# / .NET</li>
+          <li>SQL</li><li>PL/SQL</li><li>Liquid</li><li>HTML5</li><li>CSS3</li>
+          <li>PowerShell</li><li>VB.NET</li><li>XML / XSLT</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>Front end</h3>
+        <ul>
+          <li>React 18</li><li>Vite</li><li>Dexie</li><li>IndexedDB</li><li>Workbox</li>
+          <li>Service Workers</li><li>Web App Manifest</li><li>WebCrypto</li>
+          <li>Bootstrap 5</li><li>WET-BOEW / GCWeb</li><li>CDTS</li><li>SVG</li>
+          <li>Print CSS</li><li>onnxruntime-web</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>Back end &amp; data</h3>
+        <ul>
+          <li>Django 5.2</li><li>Django REST Framework</li><li>Fastify 5</li><li>Node.js</li>
+          <li>PostgreSQL</li><li>SQLite</li><li>Dataverse</li><li>SQL Server</li>
+          <li>Oracle</li><li>Gunicorn</li><li>SSIS</li><li>Entity Framework</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>Testing &amp; quality</h3>
+        <ul>
+          <li>Vitest</li><li>Playwright</li><li>Testing Library</li><li>fake-indexeddb</li>
+          <li>pg-mem</li><li>jsdom</li><li>axe-core</li><li>ESLint</li><li>mypy</li>
+          <li>ruff</li><li>user-event</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>Platform &amp; delivery</h3>
+        <ul>
+          <li>GitHub Actions</li><li>Docker</li><li>Cloudflare Pages</li><li>GitHub Pages</li>
+          <li>Render</li><li>Azure DevOps</li><li>CodeQL</li><li>CycloneDX SBOM</li>
+          <li>Let's Encrypt</li><li>Wrangler</li><li>Apache config</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>Standards &amp; interop</h3>
+        <ul>
+          <li>HL7 FHIR R4</li><li>WCAG 2.1 AA</li><li>WET4 / GCWeb</li>
+          <li>OpenAPI / Swagger</li><li>OData</li><li>FetchXML</li>
+          <li>RFC 6238 / 4226</li><li>AAMVA</li><li>WebVTT</li><li>hreflang</li>
+          <li>Official Languages Act</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>Microsoft Power Platform</h3>
+        <ul>
+          <li>Power Pages</li><li>Power Apps (model-driven)</li><li>Power Automate</li>
+          <li>Dataverse</li><li>Dynamics 365 CE</li><li>PCF controls</li>
+          <li>Business Process Flows</li><li>Plugins (C#)</li><li>SSRS</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>Security</h3>
+        <ul>
+          <li>AES-256-GCM</li><li>PBKDF2-SHA-256</li><li>TOTP / MFA</li>
+          <li>Hash-chained audit logs</li><li>Content Security Policy</li>
+          <li>reCAPTCHA</li><li>Secret scanning</li><li>Least-privilege design</li>
+        </ul>
+      </div>
+      <div class="tech-group">
+        <h3>AI-assisted delivery</h3>
+        <ul>
+          <li>Claude Code</li><li>Agent skills</li><li>MCP servers</li>
+          <li>Automated review in CI</li><li>Committed agent instructions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- 06 · Practice                                                           -->
+<!-- ====================================================================== -->
+<section class="section section--sunk" id="practice" aria-labelledby="practice-title">
+  <div class="wrap wrap--narrow">
+    <header class="section__head">
+      <p class="section__num">06 — The practice</p>
+      <h2 class="section__title" id="practice-title">Who you work with</h2>
+      <p class="lede section__intro">
+        WEBWorx is a senior-only practice. Engagements are led and delivered by the principal —
+        there is no hand-off from the person you met to a team you did not.
+      </p>
+    </header>
+
+    <div class="principal">
+      <div class="principal__id" aria-hidden="true">AF</div>
+      <div class="principal__body">
+        <h3 class="principal__name">Akram Farhat</h3>
+        <p class="principal__title">Principal Senior Consultant</p>
+        <p class="principal__bio">
+          Twenty years of enterprise software engineering and systems analysis, eight of them
+          specialising in Power Apps, Power Pages, Power Automate, Dataverse and Dynamics 365 CE.
+          Delivery lead on public-facing Government of Canada service portals under GCWeb /
+          WET-BOEW and WCAG, with database design and data-modelling depth behind it — and the
+          architect and developer of AidPost and ESMS.
+        </p>
+        <ul class="principal__facts">
+          <li><span>Based</span> Ottawa, Ontario</li>
+          <li><span>Clearance</span> Reliability status, valid to January 2030</li>
+          <li><span>Education</span> BSc (Hons) Computer Engineering Technology, University of Teesside</li>
+          <li><span>Languages</span> English, French, Arabic</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="record-heading">Delivery record</h3>
+
+    <ol class="timeline">
+      <li class="tl-item" data-current="true">
+        <div class="tl-head">
+          <span class="tl-org">Health Canada</span>
+          <span class="tl-role">System Analyst, Level 3</span>
+          <span class="tl-when">2025 – 2026</span>
+        </div>
+        <p class="tl-what">SafePort, GI Report, SSI Request and Cruise Ship Scores portals. Power Pages and Dataverse under GCWeb 17 / WET4; led accessibility remediation for a portal serving thousands of users; modernised client-side code to TypeScript.</p>
+      </li>
+      <li class="tl-item">
+        <div class="tl-head">
+          <span class="tl-org">Canada Revenue Agency</span>
+          <span class="tl-role">System Analyst, Level 3</span>
+          <span class="tl-when">2023 – 2024</span>
+        </div>
+        <p class="tl-what">GCcase — Government of Canada case management on Dynamics 365 CE. Dataverse data models, PCF grid and field controls in TypeScript and React, SSIS migration of legacy datasets, PowerShell release automation in Azure DevOps.</p>
+      </li>
+      <li class="tl-item">
+        <div class="tl-head">
+          <span class="tl-org">BC Ministry of Attorney General</span>
+          <span class="tl-role">Senior Developer / Analyst</span>
+          <span class="tl-when">2022 – 2023</span>
+        </div>
+        <p class="tl-what">FAMS (maintenance enforcement) and CARMA (case review and adjudication). Dynamics 365 CE and Power Apps solutions with .NET, FetchXML and JavaScript; OpenAPI contracts for integration endpoints.</p>
+      </li>
+      <li class="tl-item">
+        <div class="tl-head">
+          <span class="tl-org">Elections Canada</span>
+          <span class="tl-role">Senior Developer / Analyst</span>
+          <span class="tl-when">2019 – 2022</span>
+        </div>
+        <p class="tl-what">EC Connex intake and case management on Dynamics 365. Business process flows, SSRS reporting, SharePoint integration patterns, and performance testing of web form intake at scale.</p>
+      </li>
+      <li class="tl-item">
+        <div class="tl-head">
+          <span class="tl-org">National Research Council (IRAP)</span>
+          <span class="tl-role">System Analyst</span>
+          <span class="tl-when">2017 – 2019</span>
+        </div>
+        <p class="tl-what">IRAP Innovation Portal, SONAR and Concierge. Modernisation of a client-facing portal for thousands of users aligned to the Canada.ca theme and WCAG 2.0, on ASP.NET with WCF services.</p>
+      </li>
+      <li class="tl-item">
+        <div class="tl-head">
+          <span class="tl-org">Natural Resources Canada</span>
+          <span class="tl-role">System Analyst</span>
+          <span class="tl-when">2012 – 2016</span>
+        </div>
+        <p class="tl-what">EnerGuide Rating System. Oracle 11g PL/SQL, Erwin logical and physical data models, data conversion from legacy stores, multi-tier ASP.NET delivery under WCAG 2.0 and WET v4.</p>
+      </li>
+      <li class="tl-item">
+        <div class="tl-head">
+          <span class="tl-org">City of Ottawa</span>
+          <span class="tl-role">Senior Programmer / Developer</span>
+          <span class="tl-when">2003 – 2004</span>
+        </div>
+        <p class="tl-what">GROVER — ambulance call reporting for the Emergency Medical Services branch, 650 paramedic users. Oracle back end, 60+ VB.NET class objects, a data-warehouse reporting subsystem, and the full design documentation set.</p>
+      </li>
+    </ol>
+
+    <div class="callout u-mt-lg">
+      <p>
+        <strong>The first entry and the newest one are the same problem.</strong> In 2003 the
+        work was capturing patient treatment and response data for 650 paramedics. In 2026 it is
+        AidPost — casualty care and transport documentation for field responders, offline,
+        encrypted, in seven languages. Twenty-three years apart, on the technology that finally
+        makes it portable. Also omitted for brevity: Employment and Social Development Canada,
+        Transport Canada, the Immigration and Refugee Board, and Fisheries and Oceans.
+      </p>
+    </div>
+
+    <div class="callout">
+      <p>
+        <strong>How this page was written.</strong> The capabilities and approach above were
+        compiled by reading the code — twenty-six repositories with their commit history, build
+        configuration, test suites and architecture documents — rather than from a résumé. Nine
+        of those repositories are private and appear here by capability and technology only: no
+        client identifiers, no source excerpts, no screenshots.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- Contact                                                                 -->
+<!-- ====================================================================== -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="wrap wrap--narrow">
+    <div class="contact">
+      <p class="label u-mb">Available for design &amp; development engagements</p>
+      <h2 id="contact-title">Let's talk about the hard part</h2>
+      <p class="lede">
+        Offline-first architecture, accessibility that survives an audit, bilingual or
+        right-to-left delivery, or Power Platform work that has to meet federal standards.
+        Tell us what has to be true, and we will tell you how we would build it.
+      </p>
+      <div class="contact__actions">
+        <a class="btn btn--primary" href="mailto:akromi@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.8" y="5.2" width="18.4" height="13.6" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M3.6 6.6l8.4 6 8.4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          akromi@gmail.com
+        </a>
+        <a class="btn btn--ghost" href="tel:+16132772924">613-277-2924</a>
+        <a class="btn btn--ghost" href="https://github.com/akromi">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+          github.com/akromi
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ====================================================================== -->
+<!-- Footer                                                                  -->
+<!-- ====================================================================== -->
+<footer class="site-foot">
+  <div class="wrap site-foot__inner">
+    <p>
+      © <span id="year">2026</span> WEBWorx · <a href="https://webworx.solutions">webworx.solutions</a><br>
+      Akram Farhat, Principal Senior Consultant · Ottawa, Ontario, Canada
+    </p>
+    <p>
+      Products: <a href="https://aidpost.ca">aidpost.ca</a> ·
+      <a href="https://esms.school">esms.school</a><br>
+      Hand-written HTML, CSS and JavaScript. No framework, no build step.
+    </p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
