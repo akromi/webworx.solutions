@@ -1744,3 +1744,23 @@ button { font: inherit; color: inherit; }
   padding-bottom: .7rem;
   border-bottom: 1px solid var(--rule-strong);
 }
+
+/* Sits where a showcase card's domain link would go, for work with no public
+   URL yet. Same rhythm, deliberately not a link. */
+.showcase__status {
+  margin: 0 0 1.15rem;
+  padding-bottom: .1rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.83rem;
+  letter-spacing: .02em;
+  color: var(--ink-faint);
+  max-width: none;
+}
+
+.showcase__badge--beta {
+  color: var(--accent);
+  border-color: var(--accent-line);
+  background: var(--accent-wash);
+}
+.showcase__badge--beta::before { background: var(--accent); }
