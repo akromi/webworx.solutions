@@ -28,12 +28,24 @@ If you don't see the change, hold **Shift** and click reload.
 
 Best for bigger changes, or if you want to preview before publishing.
 
-**First time only — get a copy:**
+**First time only — download a copy.** Do this once. Pick a normal folder
+first — not the root of `C:\`, which Windows protects:
 
 ```bash
+cd ~/Documents          # Windows PowerShell: cd $HOME\Documents
 git clone https://github.com/akromi/webworx.solutions
 cd webworx.solutions
 ```
+
+You now have a `webworx.solutions` folder. **Every git command below must be
+run from inside it.** If you see:
+
+```
+fatal: not a git repository
+```
+
+it means you're in the wrong folder. Run `cd ~/Documents/webworx.solutions`
+(PowerShell: `cd $HOME\Documents\webworx.solutions`) and try again.
 
 **Every time after that:**
 
@@ -103,9 +115,12 @@ Cloudflare builds **every branch**, not just `main`. Anything pushed to a
 branch other than `main` gets its own private URL and does not touch the live
 site. This is the safe way to try something big.
 
-**Make a branch and push it:**
+**Make a branch and push it** — from inside your `webworx.solutions` folder
+(see *Option B* above if you haven't downloaded it yet):
 
 ```bash
+cd ~/Documents/webworx.solutions   # PowerShell: cd $HOME\Documents\webworx.solutions
+git pull                           # start from the current live version
 git checkout -b try-new-wording    # any name you like
 # ... make your edits ...
 git add .
