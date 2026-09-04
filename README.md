@@ -62,8 +62,11 @@ knowing before editing:
   cases that came up. Setting styles from JavaScript via the CSSOM
   (`el.style.setProperty`) is unaffected — that is how the pointer spotlight works.
 
-Google Fonts is the only permitted off-origin source. Every font stack has a full
-system fallback, so the page is complete if that request fails.
+Google Fonts is the only permitted off-origin source: **Inter** for body text
+(requested as a variable `400..700` range so the 450 body weight is a real
+instance rather than rounding down), **Space Grotesk** for headings, and
+**JetBrains Mono** for labels. Every stack keeps a full system fallback, so the
+page is complete if the request fails.
 
 ## Accessibility
 
