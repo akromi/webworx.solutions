@@ -204,6 +204,9 @@ button { font: inherit; color: inherit; }
   padding-inline: var(--gutter);
 }
 .wrap--narrow { max-width: var(--wrap-narrow); }
+/* The showcase carries three content-dense cards; it gets more room than the
+   1140px reading measure used everywhere else. */
+.wrap--wide   { max-width: 1320px; }
 
 .skip-link {
   position: absolute;
@@ -1494,7 +1497,8 @@ button { font: inherit; color: inherit; }
    -------------------------------------------------------------------------- */
 
 .showcase { display: grid; gap: 1.5rem; }
-@media (min-width: 960px) { .showcase { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 700px)  { .showcase { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1080px) { .showcase { grid-template-columns: repeat(3, 1fr); } }
 
 .showcase__card {
   position: relative;

@@ -214,14 +214,14 @@
 <!-- 01 · Recent work — the two flagships                                    -->
 <!-- ====================================================================== -->
 <section class="section" id="recent" aria-labelledby="recent-title">
-  <div class="wrap">
+  <div class="wrap wrap--wide">
     <header class="section__head">
       <p class="section__num">01 — Recent work</p>
-      <h2 class="section__title" id="recent-title">Two products, built end to end</h2>
+      <h2 class="section__title" id="recent-title">Three products, built end to end</h2>
       <p class="lede section__intro">
-        Both are ours from data model to deployment — architecture, interface, accessibility,
-        translation, test suite, CI and hosting. They are the clearest statement of what
-        WEBWorx does.
+        All three are ours from data model to deployment — architecture, interface,
+        accessibility, translation, test suite, CI and hosting. They are the clearest
+        statement of what WEBWorx does.
       </p>
     </header>
 
@@ -322,6 +322,53 @@
 
         <p class="showcase__note">
           Ontario is the reference edition; other jurisdictions are added as edition profiles.
+        </p>
+      </article>
+
+      <!-- Loyalty -->
+      <article class="showcase__card reveal">
+        <div class="showcase__head">
+          <div>
+            <p class="showcase__kind">Retail operations &middot; Loyalty &amp; consent</p>
+            <h3 class="showcase__title">Loyalty &amp; AutoPilot</h3>
+          </div>
+          <span class="showcase__badge">In use</span>
+        </div>
+
+        <a class="showcase__domain" href="https://github.com/akromi/TIREPlus-Orleans---Customer-Loyalty-Points">
+          github.com &middot; source
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M8.5 7H17v8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <p class="showcase__desc">
+          A complete customer loyalty programme — points, campaigns, rewards and automated
+          lifecycle offers — built to replace a paid subscription service and running as
+          <strong>one local HTML file</strong> at the shop counter. No server, no install, no
+          monthly fee, and the customer list never leaves the machine.
+        </p>
+
+        <ul class="feature-list">
+          <li><strong>A campaign engine with a ceiling.</strong> Multipliers deliberately do not stack — the better one wins — so nobody can accidentally be given six times points. Flat bonuses do add, and every purchase records which campaigns applied to it.</li>
+          <li><strong>Eight lifecycle programmes.</strong> Signup, first visit, a review ask, a growth offer every third visit, birthdays, and a three-tier win-back — each producing a dated offer with the message already written.</li>
+          <li><strong>A win-back ladder that fires once.</strong> At Risk, Lapsed and Lost are tiers of one idea, so somebody gone 200 days gets a single message rather than three "we miss you" texts in a week.</li>
+          <li><strong>CASL consent enforced in the data, not the interface.</strong> Express consent is stored with its date and how it was captured; implied consent is derived from purchase history and expires two years after the last visit. Anyone without a lawful basis never enters the send queue at all.</li>
+          <li><strong>Proof if it is ever questioned.</strong> Every export carries each customer's consent state and the date it was recorded, and every prepared message ends with the legally required identification and unsubscribe line.</li>
+        </ul>
+
+        <dl class="card__metrics">
+          <div><dt>Programmes</dt><dd>8</dd></div>
+          <div><dt>Dependencies</dt><dd>0</dd></div>
+          <div><dt>Runs from</dt><dd>file://</dd></div>
+          <div><dt>Compliance</dt><dd>CASL</dd></div>
+        </dl>
+
+        <ul class="stack">
+          <li>Vanilla JS</li><li>localStorage</li><li>CSV import / export</li>
+          <li>Node.js</li><li>Render</li><li>Print CSS</li>
+        </ul>
+
+        <p class="showcase__note">
+          In daily use at a single shop; the consent rules follow Canadian anti-spam law.
         </p>
       </article>
 
@@ -812,11 +859,10 @@
         </div>
         <h3 class="card__title">Shop operations suite — single-file apps</h3>
         <p class="card__desc">
-          Four complete business tools, each running by double-clicking an HTML file:
-          <strong>sales reporting</strong> with print-perfect A4 output, <strong>inventory
-          dissection</strong> that decodes and audits search tags, <strong>invoice history</strong>
-          with PDF-fidelity rendering and stock reconciliation, and a <strong>loyalty
-          programme</strong> with a campaigns engine.
+          Three more business tools alongside the loyalty programme above, each running by
+          double-clicking an HTML file: <strong>sales reporting</strong> with print-perfect A4
+          output, <strong>inventory dissection</strong> that decodes and audits search tags, and
+          <strong>invoice history</strong> with PDF-fidelity rendering and stock reconciliation.
         </p>
         <p class="card__note">
           No server, no install, no dependencies, no monthly fee — and the data never leaves the
@@ -825,7 +871,7 @@
         </p>
         <div class="card__aside">
           <dl class="card__metrics">
-            <div><dt>Applications</dt><dd>4</dd></div>
+            <div><dt>Applications</dt><dd>3</dd></div>
             <div><dt>Dependencies</dt><dd>0</dd></div>
             <div><dt>Runs from</dt><dd>file://</dd></div>
           </dl>
