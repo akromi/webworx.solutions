@@ -65,6 +65,80 @@ git push
 
 ---
 
+## Using VS Code
+
+**Open the project:**
+
+```bash
+git clone https://github.com/akromi/webworx.solutions
+code webworx.solutions
+```
+
+If `code` isn't recognised, open VS Code, press **Ctrl+Shift+P**, and run
+*"Shell Command: Install 'code' command in PATH"*. Or just use **File → Open
+Folder** and pick the `webworx.solutions` folder.
+
+**Install one extension: *Live Server*** (by Ritwick Dey). Then right-click
+`index.html` in the file list and choose **Open with Live Server**. The page
+opens in your browser and reloads itself every time you save.
+
+> Without Live Server, double-clicking `index.html` shows an unstyled page.
+> The stylesheet loads from `/assets/...`, which only works when the folder is
+> being served rather than opened as a file.
+
+**Publish from VS Code** — no terminal needed:
+
+1. Click the **Source Control** icon in the left sidebar (the branching symbol).
+2. Your changed files are listed. Type a short message in the box at the top.
+3. Click **Commit**.
+4. Click **Sync Changes** to send it to GitHub.
+
+Live in about a minute.
+
+---
+
+## Trying a change without publishing it
+
+Cloudflare builds **every branch**, not just `main`. Anything pushed to a
+branch other than `main` gets its own private URL and does not touch the live
+site. This is the safe way to try something big.
+
+**Make a branch and push it:**
+
+```bash
+git checkout -b try-new-wording    # any name you like
+# ... make your edits ...
+git add .
+git commit -m "Trying new wording"
+git push -u origin try-new-wording
+```
+
+**See it:** Cloudflare → **webworx-solutions** → **Deployments**. Your branch
+appears with its own `.pages.dev` link. Open it, share it, sit on it.
+
+**If you like it — publish:**
+
+```bash
+git checkout main
+git merge try-new-wording
+git push
+```
+
+**If you don't — throw it away:**
+
+```bash
+git checkout main
+git branch -D try-new-wording
+git push origin --delete try-new-wording
+```
+
+The live site never saw it either way.
+
+In VS Code the same thing is done from the branch name in the bottom-left
+corner: click it, choose **Create new branch**, then commit and sync as usual.
+
+---
+
 ## Checking it deployed
 
 1. Go to https://dash.cloudflare.com → **Workers & Pages** → **webworx-solutions**
