@@ -79,11 +79,17 @@ The site is built to the standard it advertises and is verified against it:
   accessibility tree entirely rather than merely being invisible.
 - `prefers-reduced-motion` switches off the aurora, ticker, sweep, caret, reveal
   and count-up outright — not merely shortens them.
-- **Contrast note:** `--ink-muted` and `--ink-faint` are set to the darkest/lightest
-  values that still clear 4.5:1 against `--bg` and `--bg-sunk` in their theme.
-  Lightening either (light theme) or darkening either (dark theme) reintroduces a
-  serious contrast violation across the ticker, footer, metadata labels and brand
-  suffix. Re-run the audit after any palette change.
+- **Contrast note:** `--ink-soft`, `--ink-muted` and `--ink-faint` sit
+  comfortably above the 4.5:1 minimum against `--bg` and `--bg-sunk` — they were
+  originally at the floor and were pushed further for legibility. There is some
+  headroom now, but not much: lightening them (light theme) or darkening them
+  (dark theme) by more than a step or two reintroduces a serious contrast
+  violation across the ticker, footer, metadata labels and brand suffix. Re-run
+  the audit after any palette change.
+- **Type scale:** body is 18px with the supporting sizes scaled to match, and
+  nothing renders below ~11.5px. The `-webkit-font-smoothing: antialiased`
+  override was deliberately removed — it thins strokes on macOS and reads as
+  soft; the browser default is crisper.
 
 - **Scroll-reveal is gated behind a `js` class** that `theme.js` sets before first
   paint. The reveal rules start elements at `opacity: 0`, so without that gate a
