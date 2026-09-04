@@ -510,6 +510,7 @@
           <ul class="cap__proof">
             <li><strong>At-rest encryption</strong> — WebCrypto AES-256-GCM with PBKDF2-SHA-256 at the OWASP-recommended iteration floor; the derived key is non-extractable and memory-only.</li>
             <li><strong>Second factor written to the RFC</strong> — TOTP proved against the specifications' own published test vectors, with constant-time comparison, refusal of a replayed counter and a deliberately narrow drift window.</li>
+            <li><strong>Bot mitigation the attacker cannot read</strong> — reCAPTCHA&nbsp;v3 verification moved off the client entirely: the secret key and the score threshold live in server-side configuration, the browser is told only 200 or 403 and never its own score, and every failure returns the same generic message so probing reveals nothing. Replayed tokens are caught by Google's <code>timeout-or-duplicate</code>, and the returned hostname and action are validated rather than trusted.</li>
             <li><strong>Tamper-evident audit</strong> — a hash-chained audit log with a verification command and a retention and destruction schedule.</li>
             <li><strong>Supply chain</strong> — CodeQL, secret scanning and a generated CycloneDX SBOM in CI, and a dependency count kept deliberately small.</li>
           </ul>
@@ -646,7 +647,8 @@
           <p class="evidence__label">In practice</p>
           <ul>
             <li>Client lookups replaced by server-side queries; record creation moved behind an automation flow</li>
-            <li>CAPTCHA verification moved server-side, removing another permission entirely</li>
+            <li>reCAPTCHA&nbsp;v3 checking moved server-side — the browser had been reading back its own score and judging it against a threshold sitting in plain JavaScript</li>
+            <li>The audit row is now written <em>before</em> the score is judged: the previous design threw an exception on a low score, and the rollback destroyed the record of precisely the attempts worth investigating</li>
             <li>Custom validation retired in favour of the framework's native validator</li>
           </ul>
         </div>
@@ -749,7 +751,7 @@
           <ul class="stack">
             <li>Power Pages</li><li>Dataverse</li><li>Liquid</li><li>JavaScript</li>
             <li>WET-BOEW / GCWeb</li><li>WCAG 2.1 AA</li><li>OData</li><li>FetchXML</li>
-            <li>Power Automate</li>
+            <li>Power Automate</li><li>reCAPTCHA v3</li>
           </ul>
           <a class="card__link" href="https://github.com/akromi/Portal_Lastest">
             View the client library
@@ -1058,7 +1060,7 @@
         <ul>
           <li>AES-256-GCM</li><li>PBKDF2-SHA-256</li><li>TOTP / MFA</li>
           <li>Hash-chained audit logs</li><li>Content Security Policy</li>
-          <li>reCAPTCHA</li><li>Secret scanning</li><li>Least-privilege design</li>
+          <li>reCAPTCHA v3</li><li>Secret scanning</li><li>Least-privilege design</li>
           <li>Active Directory</li><li>GC Credential Federation</li>
         </ul>
       </div>
