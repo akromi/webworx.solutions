@@ -1336,12 +1336,15 @@ button { font: inherit; color: inherit; }
    14. Scroll reveal + motion
    -------------------------------------------------------------------------- */
 
-.reveal {
+/* Gated behind .js (set by theme.js before first paint): with scripting
+   blocked nothing would ever add .is-in, and every revealed section would
+   render invisible. Without the class these rules never apply at all. */
+.js .reveal {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity .6s var(--ease), transform .6s var(--ease);
 }
-.reveal.is-in { opacity: 1; transform: none; }
+.js .reveal.is-in { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -1351,7 +1354,7 @@ button { font: inherit; color: inherit; }
     transition-duration: .01ms !important;
     scroll-behavior: auto !important;
   }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
   .btn:hover, .card:hover, .finding:hover, .bento__tile:hover { transform: none; }
 
   /* Decorative motion is switched off entirely, not merely shortened. */

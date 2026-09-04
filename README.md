@@ -81,6 +81,12 @@ The site is built to the standard it advertises and is verified against it:
   serious contrast violation across the ticker, footer, metadata labels and brand
   suffix. Re-run the audit after any palette change.
 
+- **Scroll-reveal is gated behind a `js` class** that `theme.js` sets before first
+  paint. The reveal rules start elements at `opacity: 0`, so without that gate a
+  visitor with scripting blocked would see blank sections where every finding,
+  work card and product spotlight should be. Verified at `opacity: 1` with
+  JavaScript disabled, and again under `prefers-reduced-motion`.
+
 The page is fully readable and navigable with JavaScript blocked; `main.js` only
 adds convenience.
 
